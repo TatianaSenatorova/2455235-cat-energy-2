@@ -14,7 +14,7 @@
     <div class="container">
       <div class="logo">
         <a href="#">
-          <img src="./images/logo-mobile.svg" alt="Логотип компании" width="33" height="38">
+          <img class="logo__image" src="./images/logo-mobile.svg" alt="Логотип компании" width="33" height="38">
           <img src="./images/logo-text.svg" width="101" height="18" alt="Название компании Cat energy">
         </a>
       </div>
@@ -50,49 +50,85 @@
         <img class="hero__image" src="./images/index-can-mobile.png" alt="Упаковка еды для кота" width="280" height="270">
       </div>
     </section>
-    <section class="programs">
+    <section class="programs container">
       <h2 class="visually-hidden">Программы</h2>
-      <div class="container">
-        <ul class="programs__list list-programs">
-          <li class="list-programs__item program">
-            <h3 class="program__title"></h3>
-            <p class="program__description"></p>
-            <a class="button" href="catalog.html">Каталог slim</a>
-          </li>
-          <li class="list-programms__item program">
-            <h3 class="program__title"></h3>
-            <p class="program__description"></p>
-            <a class="button" href="catalog.html">Каталог pro</a>
-          </li>
-        </ul>
+      <ul class="programs__list">
+        <li class="programs__item programs__item--slim">
+          <h3 class="programs__title">Похудение</h3>
+          <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="button" href="catalog.html">Каталог slim</a>
+        </li>
+        <li class="programs__item programs__item--add-weight">
+          <h3 class="programs__title"></h3>
+          <p class="programs__description"></p>
+          <a class="button" href="catalog.html">Каталог pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="application container">
+      <h2 class="visually-hidden">Способ применения функционального питания</h2>
+      <ol class="application__list">
+        <li class="aplication__item aplication__item--nutritionally">
+          <p>Функциональное питание
+            содержит только полезные
+            питательные вещества.</p>
+        </li>
+        <li class="aplication__item aplication__item--easy">
+          <p>Выпускается в виде порошка,
+            который нужно лишь залить
+            кипятком и готово.</p>
+        </li>
+        <li class="aplication__item aplication__item--replaceable">
+          <p>Замените один-два приема
+            обычной еды на наше
+            функциональное питание.</p>
+        </li>
+        <li class="aplication__item aplication__item--effectively">
+          <p>Уже через месяц наслаждайтесь
+            изменениями к лучшему
+            вашего питомца!</p>
+        </li>
+      </ol>
+    </section>
+    <section class="experience">
+      <div class="experience__wrapper container">
+        <h2 class="section-title">Живой пример</h2>
+        <p class="section-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <dl class="experience__list">
+          <div class="experience__item">
+            <dt class="experience__number">
+              <b>5 кг</b>
+            </dt>
+            <dd class="experience__description">
+              снижение веса
+            </dd>
+          </div>
+          <div class="experience__item">
+            <dt class="experience__number">
+              <b>60 дней</b>
+            </dt>
+            <dd class="experience__description">
+              затрачено времени
+            </dd>
+          </div>
+        </dl>
+        <p class="experience__total-expenses">Затраты на питание: 15 000 РУБ.</p>
+        <div class="experience__slider slider">
+          <img class="slider__image-before" src="./images/cat_before.jpg" width="280" height="256" alt="Фото кота с лишним весом">
+          <svg class="slider__control" width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" width="4" height="257.02" rx="2" fill="#666666" />
+            <rect x="1" y="110" width="38" height="38" rx="19" fill="white" />
+            <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+            <path d="M16 120L8 129L16 138V120Z" fill="#666666" />
+            <path d="M32 129L24 120V138L32 129Z" fill="#666666" />
+          </svg>
+          <img class="slider__image-after" src="./images/cat_after.jpg" width="280" height="256" alt="Фото кота с лишним весом">
+        </div>
       </div>
     </section>
-    <section class="application">
-      <h2 class="visually-hidden">Способ применения функционального питания</h2>
-      <div class="container">
-        <ol class="application__list">
-          <li class="aplication__item">
-            <p>Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
-          </li>
-          <li class="aplication__item">
-            <p>Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.</p>
-          </li>
-          <li class="aplication__item">
-            <p>Замените один-два приема
-              обычной еды на наше
-              функциональное питание.</p>
-          </li>
-          <li class="aplication__item">
-            <p>Уже через месяц наслаждайтесь
-              изменениями к лучшему
-              вашего питомца!</p>
-          </li>
-        </ol>
-      </div>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+
     </section>
   </main>
 
