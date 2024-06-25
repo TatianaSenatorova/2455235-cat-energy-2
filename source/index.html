@@ -12,37 +12,44 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo logo-mobile">
-      <a class="logo-mobile__image">
+      <a class="logo-mobile__image" href="#">
         <img src="./images/logo-mobile.svg" alt="Логотип компании Cat energy" width="33" height="38">
       </a>
-      <a class="logo-mobile__text">
-        <img src="./images/logo-text.svg" width="101" height="18">
+      <a class="logo-mobile__text" href="#">
+        <img src="./images/logo-text.svg" width="101" height="18" alt="Название компании Cat energy">
       </a>
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="select-programm.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list site-list--close">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--current" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="select-programm.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main-container">
+    <section class="hero">
+      <div class="hero__wrapper">
+        <h1 class="section-title">Функциональное
+          питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <a class="hero__button button" href="select-programm.html">Подобрать программу</a>
+        <img class="hero__image" src="./images/index-can-mobile.png" alt="Упаковка еды для кота" width="280" height="270">
+      </div>
+    </section>
 
   </main>
 
