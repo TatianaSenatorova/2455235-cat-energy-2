@@ -1,22 +1,13 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+@import "./common/visually-hidden";
 
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-@import "./blocks/page.scss";
-
-
-.hero {
-  &__slogan {
-    height: 400px;
-    margin: 0;
-    background-image: linear-gradient(to top, transparent 178px, #008000 178px);
-
-    @media (min-width: 768px) {
-      background-image: linear-gradient(to top, transparent 178px, transparent 178px);
-    }
-  }
-}
+@import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/container";
+@import "./blocks/main";
+@import "./blocks/hero";
