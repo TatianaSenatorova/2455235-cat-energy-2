@@ -1,0 +1,8 @@
+.hero {
+  min-height: 480px;
+  background-image:
+    url("../../images/hero_mobile_background@1x.jpg"),
+    linear-gradient(to top, transparent 178px, #62a63a 178px);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom 178px, center;
+}
