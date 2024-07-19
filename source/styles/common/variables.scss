@@ -1,7 +1,14 @@
 /* здесь используйте глобальные переменные */
 
-$color-basis: #000000;
-$color-accent: #ffffff;
+// Цвета
+$basiс-white: #ffffff;
+$basiс-black: #000000;
+$basic-green: #68b738;
+$special-grey: #f2f2f2;
+$subtitles-color: #222222;
+$text-color: #444444;
+
+
+// Размеры вьюпортов
 $tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
+$desktop-width: 1440px;
