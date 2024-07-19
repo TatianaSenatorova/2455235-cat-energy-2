@@ -13,11 +13,11 @@
     background-size: 320px 302px, auto;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background-image: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     background-image:
       url("../../images/hero_desktop_background@1x.jpg"),
       linear-gradient(to right, transparent 50%, #62a63a 50%);
@@ -29,5 +29,14 @@
         linear-gradient(to right, transparent 50%, #62a63a 50%);
       background-size: 50% 694px, auto;
     }
+  }
+}
+
+.hero__title {
+  margin: 0;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
   }
 }

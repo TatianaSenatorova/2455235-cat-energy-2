@@ -1,0 +1,21 @@
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: $basic-white;
+}
+
+.toggle-button span {
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+}
+
+.toggle-button--close span {
+  transform: rotate(-45deg);
+}
