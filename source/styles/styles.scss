@@ -8,10 +8,13 @@
 
 /* BLOCKS */
 @import "./blocks/page";
-@import "./blocks/logo";
+@import "./blocks/top-wrapper";
+@import "./blocks/main-header";
+@import "./blocks/logo-image";
+@import "./blocks/logo-text";
 @import "./blocks/main-nav";
 @import "./blocks/nav-list";
-@import "./blocks/toggle-button";
+@import "./blocks/burger";
 @import "./blocks/container";
 @import "./blocks/main";
 @import "./blocks/hero";

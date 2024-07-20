@@ -10,34 +10,34 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
 
   <div class="top-wrapper">
-    <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <a class="logo__link" href="#">
-            <picture>
-              <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_desktop.svg">
-              <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_tablet.svg">
-              <img class="logo__image" src="images/logo_mobile.svg" alt="Логотип компании." width="33" height="38">
-            </picture>
-            <picture>
-              <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_light.svg">
-              <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_light.svg">
-              <img class="logo__text" src="images/logo_text_dark.svg" alt="Логотип компании." width="101" height="18">
-            </picture>
-          </a>
-        </div>
+    <div class="container">
+      <header class="main-header">
+        <a class="logo-image" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_tablet.svg">
+            <img src="images/logo_mobile.svg" alt="Логотип компании." width="33" height="38">
+          </picture>
+        </a>
+        <a class="logo-text" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_light.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_light.svg">
+            <img src="images/logo_text_dark.svg" alt="Логотип название компании." width="101" height="18">
+          </picture>
+        </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle toggle-button toggle-button--close" type="button">
+          <button class="burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <span class="toggle-button__line"></span>
-            <span class="toggle-button__line"></span>
-            <span class="toggle-button__line"></span>
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
           </button>
           <!-- Чтобы отобразить меню добавьте класс is-open к элементу с классом nav-list -->
           <ul class="main-nav__list nav-list nav-list--close nav-list--index">
@@ -58,7 +58,8 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
+    </div>
     </header>
     <section class="hero">
       <div class="hero__wrapper container">
@@ -190,20 +191,13 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrap container">
-      <div class="logo logo--no-image">
-        <a class="logo__link" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_tablet.svg">
-            <img class="logo__image" src="images/logo_mobile.svg" alt="Логотип компании." width="33" height="38">
-          </picture>
-          <picture>
-            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_light.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_light.svg">
-            <img class="logo__text" src="images/logo_text_dark.svg" alt="Логотип компании." width="101" height="18">
-          </picture>
-        </a>
-      </div>
+      <a class="logo-text" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_light.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_light.svg">
+          <img src="images/logo_text_dark.svg" alt="Логотип компании." width="101" height="18">
+        </picture>
+      </a>
       <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
