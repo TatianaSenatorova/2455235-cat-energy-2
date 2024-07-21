@@ -57,18 +57,34 @@
   font-family: $secondary-font;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 16px;
+    padding: 13px 16px;
     font-size: 18px;
     line-height: 1.33;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: normal;
   }
 }
 
 .nav-list__item:last-child .nav-list__link {
   @media (min-width: $tablet-width) {
     padding-right: 0;
+  }
+}
+
+.nav-list--index a {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
+.nav-list--index .nav-list__link--current {
+  @media (min-width: $desktop-width) {
+    text-decoration-color: $basic-white;
   }
 }
 

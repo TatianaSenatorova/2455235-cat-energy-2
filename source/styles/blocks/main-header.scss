@@ -3,9 +3,17 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 40px;
     justify-content: start;
   }
 }
@@ -21,9 +29,11 @@
 }
 
 .main-header__main-nav {
-  max-width: 480px;
-
   @media (min-width: $tablet-width) {
     margin-left: auto;
   }
+}
+
+.main-header a {
+  display: block;
 }
