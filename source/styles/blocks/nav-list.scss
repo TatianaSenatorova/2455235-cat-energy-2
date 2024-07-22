@@ -60,13 +60,12 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 13px 16px;
-    font-size: 18px;
-    line-height: 1.33;
+
+    @include font-titles(18px, 1.33);
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: normal;
+    @include font-titles(20px, normal);
   }
 }
 

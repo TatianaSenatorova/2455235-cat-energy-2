@@ -1,4 +1,11 @@
 .section-title {
-  font-family: $secondary-font;
-  font-size: 36px;
+  @include font-titles (36px, 1);
+  color: $basic-white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-titles (60px, 1);
+    color: $basic-black;
+    text-align: left;
+  }
 }
