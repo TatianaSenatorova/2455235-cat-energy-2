@@ -1,7 +1,5 @@
 .nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include delete-list-style();
   background-color: $basic-white;
   display: flex;
   align-items: center;
@@ -9,6 +7,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 

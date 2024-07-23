@@ -1,0 +1,29 @@
+.programs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.programs__list {
+  @include delete-list-style();
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.programs__item {
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  grid-template-rows: 53px 1fr min-content;
+}
+
+.programs__title {
+  text-transform: uppercase;
+  grid-column: 2 / 3;
+
+  @include font-titles(24px, 1.54);
+}
+
+.programs__description {
+  grid-column: 1 / -1;
+}

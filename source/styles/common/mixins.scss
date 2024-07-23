@@ -14,3 +14,26 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin button() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-white;
+  border: none;
+  background-color: $basic-green;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  @include font-titles(16px, 1.25);
+}
+
+@mixin delete-list-style() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+}

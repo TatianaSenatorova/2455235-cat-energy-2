@@ -13,8 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    padding-bottom: 40px;
-    justify-content: start;
+    padding-bottom: 29px;
   }
 }
 
@@ -31,6 +30,8 @@
 .main-header__main-nav {
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    position: relative;
+    z-index: 5;
   }
 }
 
