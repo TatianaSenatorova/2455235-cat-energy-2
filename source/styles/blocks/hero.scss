@@ -76,15 +76,16 @@
   margin-bottom: 29px;
   text-transform: uppercase;
   color: $basic-white;
-
-  @include font-titles (14px, 1);
+  font-family: $secondary-font;
+  font-size: 14px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
     margin-bottom: 50px;
     margin-left: 90px;
 
-    @include font-titles (20px, 1);
+    font-family: $secondary-font;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {

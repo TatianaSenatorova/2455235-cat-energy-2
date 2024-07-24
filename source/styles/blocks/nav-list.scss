@@ -1,5 +1,7 @@
 .nav-list {
-  @include delete-list-style();
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: $basic-white;
   display: flex;
   align-items: center;
@@ -62,12 +64,15 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 13px 16px;
-
-    @include font-titles(18px, 1.33);
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.33;
   }
 
   @media (min-width: $desktop-width) {
-    @include font-titles(20px, normal);
+    font-family: $secondary-font;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

@@ -1,3 +1,16 @@
 .button {
-  @include button();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-white;
+  border: none;
+  background-color: $basic-green;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 1.25;
 }
