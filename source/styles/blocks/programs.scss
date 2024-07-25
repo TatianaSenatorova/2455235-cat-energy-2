@@ -14,18 +14,52 @@
 
 .programs__item {
   display: grid;
-  grid-template-columns: 67px 1fr;
-  grid-template-rows: 53px 1fr min-content;
-  padding: 21px 33px 18px 20px;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 50px 1fr min-content;
+  padding: 21px 20px 18px;
   background-color: $basic-grey;
+  gap: 22px 20px;
+}
+
+.programs__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  position: relative;
+}
+
+.programs__image::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+}
+
+.programs__item--slim .programs__image::after {
+  width: 36px;
+  height: 50px;
+  top: -3px;
+  transform: translateX(-50%);
+  background-image: url("../../icons/cat_slim.svg");
+}
+
+.programs__item--add-weight .programs__image::after {
+  width: 67px;
+  height: 28px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../icons/cat_pro.svg");
 }
 
 .programs__title {
+  margin: 0;
+  align-self: center;
   text-transform: uppercase;
   grid-column: 2 / 3;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 1.54;
+  font-weight: 400;
 }
 
 .programs__description {
@@ -37,6 +71,24 @@
 }
 
 .programs__link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
   grid-column: 1 / -1;
+  padding-top: 15px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black;
+
+  &:hover svg {
+    transform: scaleX(1.25);
+  }
 }
 
+.programs__icon-wrap svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
