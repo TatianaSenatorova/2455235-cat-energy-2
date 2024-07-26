@@ -2,14 +2,12 @@
   font-family: $secondary-font;
   font-size: 36px;
   color: $basic-white;
-  text-align: center;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-family: $secondary-font;
     font-size: 60px;
     color: $basic-black;
-    text-align: left;
   }
 }
 
