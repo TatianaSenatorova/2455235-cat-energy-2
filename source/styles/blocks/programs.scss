@@ -1,10 +1,12 @@
 .programs {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
   }
 }
 
