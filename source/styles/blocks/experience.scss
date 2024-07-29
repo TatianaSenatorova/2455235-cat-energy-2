@@ -1,0 +1,97 @@
+.experience {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 367px 1fr;
+    gap: 0;
+  }
+}
+
+.experience__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $basic-black;
+  line-height: 1.11;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    grid-column: 1 / -1;
+    line-height: 1;
+  }
+}
+
+.experience__info {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    margin-bottom: 55px;
+  }
+}
+
+.experience__list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  column-gap: 32px;
+}
+
+.experience__item {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  padding-bottom: 0;
+  background-image: url("../../icons/border-list-experience.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.experience__number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    left: 1.23;
+  }
+}
+
+.experience__description {
+  margin: 0;
+  width: min-content;
+  font-size: 12px;
+  text-align: center;
+}
+
+.experience__expenses {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: -1 / -2;
+  }
+}
+
+
+

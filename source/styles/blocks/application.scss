@@ -15,6 +15,10 @@
       bottom: -47px;
       background-color: $decorated-light-grey;
     }
+
+    @media (min-width: $desktop-width) {
+      content: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -117,11 +121,7 @@
 }
 
 .application__info {
-  margin: 0;
   z-index: 2;
-  font-size: 14px;
-  line-height: 1.29;
-  color: $text-color;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
