@@ -1,0 +1,18 @@
+.address {
+  font-size: 14px;
+  line-height: 1.43;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: end;
+  }
+}
+
+.address p {
+  margin: 0;
+}
