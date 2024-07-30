@@ -14,13 +14,22 @@
   object-fit: cover;
   height: 100%;
   display: block;
+  object-position: left;
+  background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, $dark-grey 361px, $basic-white 361px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, $dark-grey 377px, $basic-white 377px);
+  }
 }
 
 .slider__image-before {
   position: absolute;
   width: 50%;
   top: 0;
-  object-position: left;
 }
 
 .slider__divider {
