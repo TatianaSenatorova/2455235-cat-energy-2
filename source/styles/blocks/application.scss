@@ -33,6 +33,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +146,7 @@
       content: counter(item-number);
       font-family: $secondary-font;
       font-size: 280px;
+      line-height: 1;
       color: $basic-grey;
     }
   }

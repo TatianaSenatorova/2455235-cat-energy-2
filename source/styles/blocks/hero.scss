@@ -81,12 +81,13 @@
   color: $basic-white;
   font-family: $secondary-font;
   font-size: 14px;
+  line-height: 1;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
     margin-bottom: 50px;
     margin-left: 90px;
-
+    font-size: 20px;
     font-family: $secondary-font;
     font-weight: 400;
   }

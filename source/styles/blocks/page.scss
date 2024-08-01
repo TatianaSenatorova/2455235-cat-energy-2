@@ -6,10 +6,14 @@
   min-height: 100%;
   margin: 0;
   font-family: $primary-font;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 1.5;
   background-color: $basic-white;
   color: $basic-black;
   display: flex;
   flex-direction: column;
+}
+
+.no-scroll.page__body {
+  overflow: hidden;
 }

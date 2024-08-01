@@ -25,14 +25,14 @@
   transition:
     transform 0.3s ease,
     opacity 0.2s;
-}
 
-.burger__line--top {
-  transform: translate(-50%, calc(-50% - 8px));
-}
+  &--top {
+    transform: translate(-50%, calc(-50% - 8px));
+  }
 
-.burger__line--bottom {
-  transform: translate(-50%, calc(-50% + 8px));
+  &--bottom {
+    transform: translate(-50%, calc(-50% + 8px));
+  }
 }
 
 .is-opened .burger__line--top {
