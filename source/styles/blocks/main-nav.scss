@@ -1,17 +1,16 @@
 .main-nav__list {
+  visibility: hidden;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 65px;
-  left: 0;
-  z-index: 5;
-  transform: translateX(100vw);
-  transition: 0.4s ease;
+  left: 100%;
+  transition: left 0.4s, visibility 0.4s;
 
   @media (min-width: $tablet-width) {
+    visibility: visible;
     width: fit-content;
     max-width: 480px;
     position: static;
-    transform: translateX(0);
     margin-left: auto;
   }
 
@@ -21,5 +20,6 @@
 }
 
 .is-opened.main-nav__list {
-  transform: translateX(0);
+  left: 0;
+  visibility: visible;
 }

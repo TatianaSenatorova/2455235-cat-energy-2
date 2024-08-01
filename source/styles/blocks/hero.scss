@@ -4,15 +4,15 @@
   margin-bottom: 20px;
   background-image:
     url("../../images/hero_mobile_background@1x.jpg"),
-    linear-gradient(to top, transparent 178px, #62a63a 178px);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom 178px, center;
+    linear-gradient(to top, $basic-white 178px, #62a63a 178px);
+  background-repeat: no-repeat;
+  background-position: center bottom 178px, center bottom;
+  background-size: 320px 302px, 100% 100%;
 
   @media (min-resolution: 2dppx) {
     background-image:
       url("../../images/hero_mobile_background@2x.jpg"),
-      linear-gradient(to top, transparent 178px, #62a63a 178px);
-    background-size: 320px 302px, auto;
+      linear-gradient(to top, $basic-white 178px, #62a63a 178px);
   }
 
   @media (min-width: $tablet-width) {
@@ -22,21 +22,21 @@
 
   @media (min-width: $desktop-width) {
     min-height: 694px;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     padding-top: 0;
+    margin-bottom: 82px;
     background-image:
       url("../../images/hero_desktop_background@1x.jpg"),
-      linear-gradient(to right, transparent 50%, #62a63a 50%);
-    background-position: right bottom, right bottom;
+      linear-gradient(to right, $basic-white 50%, #62a63a 50%);
+    background-position: left calc(50% + 520px) bottom, bottom;
+    background-size: 1040px 694px, 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image:
         url("../../images/hero_desktop_background@2x.jpg"),
-        linear-gradient(to right, transparent 50%, #62a63a 50%);
-      background-size: 50% 100%, auto;
+        linear-gradient(to right, $basic-white 50%, #62a63a 50%);
     }
   }
 }

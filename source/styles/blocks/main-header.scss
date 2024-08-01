@@ -1,3 +1,23 @@
+.main-header {
+  @media (min-width: $desktop-width) {
+    &--on-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      color: $basic-white;
+    }
+
+    &--on-content a {
+      color: inherit;
+    }
+
+    &--on-content .nav-list__link--current {
+      text-decoration-color: $basic-white;
+    }
+  }
+}
+
 .main-header__content {
   display: flex;
   justify-content: space-between;
@@ -30,8 +50,6 @@
 .main-header__main-nav {
   @media (min-width: $tablet-width) {
     margin-left: auto;
-    // position: relative;
-    z-index: 5;
   }
 }
 
