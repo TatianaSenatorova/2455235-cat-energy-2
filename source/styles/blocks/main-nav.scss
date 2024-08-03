@@ -1,13 +1,15 @@
 .main-nav__list {
-  visibility: hidden;
   width: 100vw;
-  position: fixed;
-  top: 65px;
-  left: 100%;
-  transition: left 0.4s, visibility 0.4s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.4s, visibility 0.4s;
 
   @media (min-width: $tablet-width) {
     visibility: visible;
+    transform: translateX(0);
     width: fit-content;
     max-width: 480px;
     position: static;
@@ -20,6 +22,6 @@
 }
 
 .is-opened.main-nav__list {
-  left: 0;
+  transform: translateX(0);
   visibility: visible;
 }

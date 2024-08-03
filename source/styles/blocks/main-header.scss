@@ -1,4 +1,6 @@
 .main-header {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     &--on-content {
       position: absolute;
