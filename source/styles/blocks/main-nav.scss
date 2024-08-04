@@ -3,7 +3,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   visibility: hidden;
   transition: transform 0.4s, visibility 0.4s;
 
@@ -22,6 +22,6 @@
 }
 
 .is-opened.main-nav__list {
-  transform: translateX(0);
+  transform: none;
   visibility: visible;
 }

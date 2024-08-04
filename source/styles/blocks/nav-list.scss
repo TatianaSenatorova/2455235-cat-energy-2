@@ -52,7 +52,6 @@
 }
 
 .nav-list__link {
-  display: block;
   width: fit-content;
   margin: 0 auto;
   padding: 26px;
@@ -89,6 +88,6 @@
     text-decoration: underline;
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;
-    text-decoration-color: var (--current-link-underline);
+    text-decoration-color: var(--current-link-underline);
   }
 }

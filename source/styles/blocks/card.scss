@@ -1,3 +1,35 @@
+.card {
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
+}
+
+.card__inner {
+  @media (min-width: $tablet-width) {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+.card__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -81px;
+  }
+}
+
+
+
+.card__image {
+  max-height: 100%;
+  object-fit: cover;
+
+}
+
+
 .card__subtitle {
   display: none;
 }

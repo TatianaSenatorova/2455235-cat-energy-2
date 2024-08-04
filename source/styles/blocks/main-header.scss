@@ -1,20 +1,17 @@
 .main-header {
+  --current-link-underline: #{$basic-green};
   position: relative;
-  --current-link-underline: $basic-green;
 
   @media (min-width: $desktop-width) {
+    z-index: 5;
+
     &--on-content {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 5;
       color: $basic-white;
-    }
-
-    &--on-content a {
-      color: inherit;
-      --current-link-underline: $basic-white;
+      --current-link-underline: #{$basic-white};
     }
   }
 }
@@ -56,4 +53,5 @@
 
 .main-header a {
   display: block;
+  color: inherit;
 }
