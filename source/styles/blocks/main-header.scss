@@ -1,5 +1,6 @@
 .main-header {
   position: relative;
+  --current-link-underline: $basic-green;
 
   @media (min-width: $desktop-width) {
     &--on-content {
@@ -7,15 +8,13 @@
       top: 0;
       left: 0;
       right: 0;
+      z-index: 5;
       color: $basic-white;
     }
 
     &--on-content a {
       color: inherit;
-    }
-
-    &--on-content .nav-list__link--current {
-      text-decoration-color: $basic-white;
+      --current-link-underline: $basic-white;
     }
   }
 }
