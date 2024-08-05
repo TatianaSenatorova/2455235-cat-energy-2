@@ -5,6 +5,30 @@
   font-weight: 400;
   line-height: 1;
 
+  &--dark {
+    color: $basic-black;
+  }
+
+  &--smaller-font {
+    font-size: 24px;
+  }
+
+  &--with-line {
+    position: relative;
+    width: max-content;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(100% + 40px);
+      width: 100vw;
+      height: 2px;
+      background-color: $basic-green;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-family: $secondary-font;
     font-size: 60px;
@@ -12,6 +36,3 @@
   }
 }
 
-.section-title--dark {
-  color: $basic-black;
-}

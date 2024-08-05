@@ -1,6 +1,4 @@
-.product-list {
-  display: grid;
-  grid-template-columns: 1fr;
+.additions-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,16 +15,18 @@
   }
 }
 
-.product-list__item {
+.additions-list__item {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: calc(50% - 50vw);
     width: 100vw;
     height: 1px;
-    background-color: #ebebeb;
+    background-color: $decorated-grey-second;
   }
 }
+
+
