@@ -4,4 +4,29 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
+}
+
+.product-list__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+  }
 }
