@@ -1,9 +1,9 @@
 .main-header {
   --current-link-underline: #{$basic-green};
   position: relative;
+  z-index: 5;
 
   @media (min-width: $desktop-width) {
-    z-index: 5;
 
     &--on-content {
       position: absolute;

@@ -1,9 +1,44 @@
 .additions {
   padding-top: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .additions__title {
   margin: 0;
   margin-bottom: 36px;
+}
+
+.additions__gift {
+  min-height: 290px;
+  padding: 59px 59px 30px;
+  background-image: url("../../images/gift_background_mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/gift_background_mobile@2x.jpg");
+  }
+}
+
+.additions__text {
+  margin: 0;
+  text-align: center;
+  color: $basic-white;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/gift.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
 }
