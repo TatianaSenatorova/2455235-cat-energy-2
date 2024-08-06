@@ -1,18 +1,23 @@
 .card {
   padding: 20px 0 25px;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 81px;
+    padding: 81px 37px 40px;
   }
 }
 
 .card__inner {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto 1fr;
+  height: 100%;
+
 
   @media (min-width: $tablet-width) {
+    padding: 0 37px;
+    grid-template-columns: 1fr;
     background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
   }
 }
 
@@ -25,6 +30,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -81px;
+    margin-bottom: 22px;
+    grid-row: 1 / 2;
+    width: 200px;
+    height: 210px;
   }
 }
 
@@ -36,6 +45,10 @@
 .card__link {
   display: block;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+  }
 }
 
 .card__title {
@@ -46,8 +59,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: $special-black;
+  color: $subtitles-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    max-width: 135px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .card__subtitle {
@@ -68,6 +89,12 @@
     height: 2px;
     background-color: $special-grey-third;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
 
   &::after {
     position: absolute;
@@ -114,11 +141,25 @@
   margin: 0;
   margin-bottom: 17px;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
   font-size: 12px;
   line-height: 1.33;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.card__info-item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
+    border-bottom: 1px solid $decorated-grey-second;
+  }
 }
 
 .card__info dd {
@@ -128,4 +169,9 @@
 
 .card__button {
   grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
