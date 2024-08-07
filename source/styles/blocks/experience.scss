@@ -166,8 +166,6 @@
 .experience__slider {
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    width: 560px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
