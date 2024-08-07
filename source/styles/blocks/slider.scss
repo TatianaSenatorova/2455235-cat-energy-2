@@ -1,6 +1,13 @@
 .slider {
   position: relative;
+  max-width: 280px;
   min-height: 256px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 560px;
+    min-height: 512px;
+  }
 }
 
 .slider__list {

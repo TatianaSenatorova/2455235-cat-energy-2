@@ -4,20 +4,22 @@
   margin-bottom: 20px;
   background-image:
     url("../../images/hero_mobile_background@1x.jpg"),
-    linear-gradient(to top, $basic-white 178px, #62a63a 178px);
+    linear-gradient(to bottom, #62a63a 302px, transparent 302px);
   background-repeat: no-repeat;
-  background-position: center bottom 178px, center bottom;
+  background-position: center top;
   background-size: 320px 302px, 100% 100%;
+  color: $basic-white;
 
   @media (min-resolution: 2dppx) {
     background-image:
       url("../../images/hero_mobile_background@2x.jpg"),
-      linear-gradient(to top, $basic-white 178px, #62a63a 178px);
+      linear-gradient(to bottom, #62a63a 302px, transparent 302px);
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     background-image: none;
+    color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,14 +28,14 @@
     padding-top: 0;
     background-image:
       url("../../images/hero_desktop_background@1x.jpg"),
-      linear-gradient(to right, $basic-white 50%, #62a63a 50%);
+      linear-gradient(to right, transparent 50%, #62a63a 50%);
     background-position: left calc(50% + 520px) bottom, bottom;
     background-size: 1040px 694px, 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image:
         url("../../images/hero_desktop_background@2x.jpg"),
-        linear-gradient(to right, $basic-white 50%, #62a63a 50%);
+        linear-gradient(to right, transparent 50%, #62a63a 50%);
     }
   }
 }
@@ -55,11 +57,14 @@
 }
 
 .hero__content {
+  max-width: 280px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 100%;
     justify-items: start;
   }
 
@@ -74,13 +79,11 @@
   margin: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
-  color: $basic-white;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 1;
 
   @media (min-width: $tablet-width) {
-    color: $basic-black;
     margin-bottom: 50px;
     margin-left: 90px;
     font-size: 20px;

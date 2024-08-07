@@ -14,13 +14,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    gap: 30px;
-  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -37,11 +30,19 @@
   background-color: $basic-grey;
   gap: 22px 20px;
 
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 200px;
     grid-template-rows: min-content 1fr min-content;
     gap: 24px 53px;
     padding: 77px 63px 53px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +50,10 @@
     grid-template-rows: min-content 1fr min-content;
     gap: 24px 62px;
     padding: 47px 61px 55px 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
