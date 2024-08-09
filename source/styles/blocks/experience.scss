@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    background-image: linear-gradient(to top, $dark-grey 462px, $basic-white 462px);
+    background-image: linear-gradient(to bottom, $basic-white 136px, $dark-grey 136px);
     padding-top: 45px;
     padding-bottom: 101px;
   }
@@ -65,34 +65,31 @@
 }
 
 .experience__list {
-  margin: 0;
-  height: fit-content;
-  margin-bottom: 10px;
+  margin: 0 auto 14px;
+  max-width: 280px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   column-gap: 32px;
 
   @media (min-width: $tablet-width) {
-    width: 367px;
+    max-width: 367px;
     column-gap: 43px;
-    margin-bottom: 0;
+    margin: 0 auto 99px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    margin-bottom: 55px;
+    margin: 0 0 60px;
   }
 }
 
 .experience__item {
-  padding: 14px 14px 0;
+  min-height: 56px;
+  padding-top: 15px;
   border-radius: 3px;
   border: 1px solid $decorated-grey-second;
-
-  @media (min-width: $tablet-width) {
-    padding: 15px 15px 0;
-  }
 }
 
 .experience__number {
@@ -110,10 +107,9 @@
 }
 
 .experience__description {
-  margin: 0;
+  margin: 0 auto -12px;
   width: 100px;
   padding: 0 11px;
-  margin-bottom: -12px;
   background-color: $dark-grey;
   text-align: center;
   font-size: 12px;
@@ -142,10 +138,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: -1 / -2;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    margin-bottom: 99px;
     justify-self: end;
     gap: 9px;
     padding-top: 11px;
@@ -159,7 +154,7 @@
     justify-self: start;
     flex-direction: row;
     gap: 63px;
-    margin-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -171,7 +166,5 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
-    margin-bottom: 10px;
-    margin-top: auto;
   }
 }

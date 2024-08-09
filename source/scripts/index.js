@@ -13,54 +13,43 @@ burgerEl.addEventListener('click', () => {
 
 //Слайдер
 
-// const sliderDividerEl = document.querySelector('.slider__divider');
-// const sliderZoneEl = document.querySelector('.slider');
-// // const sliderAfterEl = document.querySelector('.slider__item-after');
-// const sliderBeforeEl = document.querySelector('.slider__item-after');
+const sliderDividerEl = document.querySelector('.slider__divider');
+const sliderZoneEl = document.querySelector('.slider');
+const sliderBeforeEl = document.querySelector('.slider__image-before');
 
-// let mouseEvent = false;
+let mouseEvent = false;
 
-// // Начало события изменения размера половинки слайда
-// sliderDividerEl.addEventListener('mousedown', (e) => {
-//   e.preventDefault();
-//   mouseEvent = true;
-//   console.log(mouseEvent);
-// });
+sliderDividerEl.addEventListener('mousedown', (e) => {
+  e.preventDefault();
+  mouseEvent = true;
+});
 
-// // Завершение события изменения размера половинки слайда
-// sliderDividerEl.addEventListener('mouseup', (e) => {
-//   e.preventDefault();
-//   mouseEvent = false;
-// });
+sliderDividerEl.addEventListener('mouseup', (e) => {
+  e.preventDefault();
+  mouseEvent = false;
+});
 
-// // Завершение события изменения размера половинки слайда
-// sliderZoneEl.addEventListener('mouseup', () => {
-//   mouseEvent = false;
-// });
+sliderZoneEl.addEventListener('mouseup', () => {
+  mouseEvent = false;
+});
 
-// // Завершение события изменения размера половинки слайда
-// sliderZoneEl.addEventListener('mouseleave', () => {
-//   mouseEvent = false;
-// });
+sliderZoneEl.addEventListener('mouseleave', () => {
+  mouseEvent = false;
+});
 
-// // Отслеживаем движения мыши в области слайдера
-// sliderZoneEl.addEventListener('mousemove', (e) => {
-//   console.log(sliderZoneEl.offsetLeft, e.pageX, sliderZoneEl.offsetWidth);
-//   const x = e.pageX - sliderZoneEl.offsetLeft;
-//   let percent = x * 100 / sliderZoneEl.offsetWidth;
-//   console.log(percent);
+sliderZoneEl.addEventListener('mousemove', (e) => {
+  const x = e.pageX - sliderZoneEl.offsetLeft;
+  let percent = x * 100 / sliderZoneEl.offsetWidth;
 
-//   // Ограничения
-//   if (percent < 0) {
-//     percent = 0;
-//   } else if (percent > 100) {
-//     percent = 100;
-//   }
+  if (percent < 0) {
+    percent = 0;
+  } else if (percent > 100) {
+    percent = 100;
+  }
 
-//   if (mouseEvent) {
-//     console.log(percent);
-//     sliderDividerEl.style.left = `${percent }%`;
-//     sliderBeforeEl.style.width = `${percent }%`;
-//   }
-// });
+  if (mouseEvent) {
+    sliderDividerEl.style.left = `${percent }%`;
+    sliderBeforeEl.style.width = `${percent }%`;
+  }
+});
 
