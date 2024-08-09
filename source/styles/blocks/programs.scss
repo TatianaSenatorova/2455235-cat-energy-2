@@ -203,12 +203,14 @@
     grid-column: 1 / -1;
   }
 
-  &:hover svg {
+  &:hover .programs__icon-wrap {
     transform: scaleX(1.25);
   }
 }
 
-.programs__link svg {
+.programs__icon-wrap {
+  width: 32px;
+  height: 12px;
   transition: transform 0.3s;
   transform-origin: left;
 }
