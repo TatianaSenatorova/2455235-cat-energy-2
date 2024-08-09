@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    max-width: 708px;
 
     &::before {
       content: none;

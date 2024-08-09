@@ -50,6 +50,8 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: 850px;
+    margin: 0 auto;
     grid-template-columns: repeat(2, minmax(230px, auto));
     gap: 37px 0;
     justify-content: space-between;
@@ -57,6 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 100%;
     grid-template-columns: repeat(4, minmax(230px, auto));
     padding-right: 0;
   }

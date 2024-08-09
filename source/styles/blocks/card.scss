@@ -1,9 +1,13 @@
 .card {
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
   padding: 20px 0 25px;
-  height: 100%;
 
   @media (min-width: $tablet-width) {
+    max-width: 324px;
     padding: 81px 37px 40px;
+    background-image: linear-gradient(to bottom, transparent 81px, $basic-grey 81px);
   }
 }
 
@@ -11,13 +15,9 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: auto 1fr;
-  height: 100%;
-
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px;
-    grid-template-columns: 1fr;
-    background-color: #f2f2f2;
+    display: block;
   }
 }
 
@@ -32,8 +32,6 @@
     margin-top: -81px;
     margin-bottom: 22px;
     grid-row: 1 / 2;
-    width: 200px;
-    height: 210px;
   }
 }
 
@@ -45,10 +43,6 @@
 .card__link {
   display: block;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    justify-self: center;
-  }
 }
 
 .card__title {
@@ -63,8 +57,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 21px;
     max-width: 135px;
+    margin: 0 auto 21px;
     text-align: center;
     font-size: 20px;
     line-height: 1.2;
@@ -73,6 +67,16 @@
 
 .card__subtitle {
   display: none;
+}
+
+.card--last {
+  display: block;
+}
+
+.card--last .card__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card--last .card__link-image {
@@ -85,14 +89,14 @@
   &::after,
   &::before {
     content: "";
-    width: 30px;
+    width: 100%;
     height: 2px;
     background-color: $special-grey-third;
   }
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 210px;
+    width: 60px;
+    height: 60px;
   }
 
 
@@ -107,27 +111,18 @@
   display: none;
 }
 
+
 .card--last .card__subtitle {
   display: block;
   margin: 0;
   margin-bottom: 21px;
-  justify-self: center;
   font-size: 12px;
   line-height: 1.33;
   color: $text-color;
 }
 
-.card--last .card__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .card--last .card__info {
   display: none;
-}
-
-.card--last .card__link {
-  justify-self: center;
 }
 
 .card--last .card__title {
@@ -135,7 +130,6 @@
   margin-bottom: 8px;
   max-width: 100%;
 }
-
 
 .card__info {
   margin: 0;
@@ -169,6 +163,7 @@
 
 .card__button {
   grid-column: 1 / -1;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
