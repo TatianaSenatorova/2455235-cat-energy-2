@@ -48,7 +48,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none;
 
   &::after {
     content: "";
@@ -59,7 +58,6 @@
     background-color: $special-grey;
     border-radius: 2px;
     cursor: col-resize;
-    pointer-events: auto;
   }
 }
 

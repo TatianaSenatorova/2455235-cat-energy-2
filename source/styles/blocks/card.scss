@@ -71,6 +71,10 @@
 
 .card--last {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .card--last .card__inner {

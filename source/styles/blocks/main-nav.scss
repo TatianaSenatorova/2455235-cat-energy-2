@@ -3,17 +3,17 @@
   position: absolute;
   top: 100%;
   left: 0;
-  transform: translateX(100vw);
   visibility: hidden;
-  transition: transform 0.4s, visibility 0.4s;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
 
   @media (min-width: $tablet-width) {
     visibility: visible;
-    transform: translateX(0);
     width: fit-content;
     max-width: 480px;
     position: static;
     margin-left: auto;
+    opacity: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,6 @@
 }
 
 .is-opened.main-nav__list {
-  transform: none;
+  opacity: 1;
   visibility: visible;
 }

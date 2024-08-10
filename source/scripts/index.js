@@ -33,10 +33,6 @@ sliderZoneEl.addEventListener('mouseup', () => {
   mouseEvent = false;
 });
 
-sliderZoneEl.addEventListener('mouseleave', () => {
-  mouseEvent = false;
-});
-
 sliderZoneEl.addEventListener('mousemove', (e) => {
   const x = e.pageX - sliderZoneEl.offsetLeft;
   let percent = x * 100 / sliderZoneEl.offsetWidth;
