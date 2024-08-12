@@ -48,4 +48,3 @@ sliderZoneEl.addEventListener('mousemove', (e) => {
     sliderBeforeEl.style.width = `${percent }%`;
   }
 });
-
