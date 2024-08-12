@@ -20,10 +20,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     max-width: 708px;
+    margin: 0 auto;
 
     &::before {
       content: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
   }
 }
 

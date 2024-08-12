@@ -21,6 +21,10 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 40px;
+    }
   }
 
   &--with-line {

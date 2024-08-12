@@ -16,7 +16,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 75px;
+    max-width: 800px;
+    margin: 0 auto 75px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
   }
 }
 
