@@ -6,8 +6,8 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
+    padding: 81px 0 0;
     max-width: 324px;
-    padding: 81px 37px 40px;
     background-image: linear-gradient(to bottom, transparent 81px, $basic-grey 81px);
   }
 }
@@ -20,6 +20,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    padding: 0 37px 40px;
   }
 }
 
@@ -119,9 +120,7 @@
   padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 81px;
-    padding: 0 37px 40px;
-    border: 2px solid $basic-grey;
+    padding: 81px 0 0;
     background-image: none;
   }
 }
@@ -129,6 +128,12 @@
 .card--last .card__inner {
   grid-template-columns: 1fr;
   justify-items: center;
+  grid-template-rows: auto auto 1fr;
+  border: 2px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+  }
 }
 
 .card--last .card__link-image {
@@ -169,8 +174,14 @@
 
 .card--last .card__title {
   margin: 0;
-  margin-bottom: 8px;
   max-width: 100%;
+  margin-bottom: 8px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin-bottom: 23px;
+  }
 }
 
 .card--last .card__subtitle {
@@ -180,6 +191,14 @@
   font-size: 12px;
   line-height: 1.33;
   color: $text-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.13;
+  }
 }
 
 .card--last .card__info {

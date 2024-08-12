@@ -1,16 +1,27 @@
 .additions {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 80px;
+  }
 }
 
 .additions__title {
   margin: 0;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .additions__gift {
   min-height: 290px;
   padding: 59px 59px 30px;
+  display: flex;
+  justify-content: center;
   background-image: url("../../images/gift_background_mobile@1x.jpg");
   background-color: $basic-green;
   background-repeat: no-repeat;
@@ -20,19 +31,29 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/gift_background_mobile@2x.jpg");
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding: 30px 125px 30px 77px;
+    background-image: url("../../images/gift_background_tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/gift_background@2x.jpg");
+    }
+  }
 }
 
 .additions__text {
-  max-width: 161px;
-  margin: 0 auto;
+  width: 161px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 48px;
   text-align: center;
   color: $basic-white;
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 48px;
 
   &::before {
     content: "";
@@ -42,5 +63,16 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      justify-self: start;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    grid-template-columns: 1fr 161px;
+    align-items: center;
+    text-align: start;
   }
 }
